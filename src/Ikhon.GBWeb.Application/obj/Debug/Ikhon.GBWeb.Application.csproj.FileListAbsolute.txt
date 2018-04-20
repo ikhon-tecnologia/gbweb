@@ -1,0 +1,13 @@
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\bin\Debug\Ikhon.GBWeb.Application.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\bin\Debug\Ikhon.GBWeb.Application.pdb
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\bin\Debug\AutoMapper.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\bin\Debug\Ikhon.GBWeb.Data.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\bin\Debug\Ikhon.GBWeb.Domain.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\bin\Debug\EntityFramework.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\bin\Debug\Ikhon.GBWeb.Data.pdb
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\bin\Debug\Ikhon.GBWeb.Domain.pdb
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\bin\Debug\AutoMapper.xml
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\bin\Debug\EntityFramework.xml
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\obj\Debug\Ikhon.GBWeb.Application.csprojResolveAssemblyReference.cache
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\obj\Debug\Ikhon.GBWeb.Application.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Application\obj\Debug\Ikhon.GBWeb.Application.pdb

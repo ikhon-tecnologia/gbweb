@@ -1,0 +1,4 @@
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Domain\bin\Release\Ikhon.GBWeb.Domain.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Domain\bin\Release\Ikhon.GBWeb.Domain.pdb
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Domain\obj\Release\Ikhon.GBWeb.Domain.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Domain\obj\Release\Ikhon.GBWeb.Domain.pdb

@@ -1,0 +1,14 @@
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\bin\Debug\Ikhon.GBWeb.Data.dll.config
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\bin\Debug\Ikhon.GBWeb.Data.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\bin\Debug\Ikhon.GBWeb.Data.pdb
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\bin\Debug\Dapper.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\bin\Debug\EntityFramework.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\bin\Debug\Ikhon.GBWeb.Domain.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\bin\Debug\Ikhon.GBWeb.Domain.pdb
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\bin\Debug\Dapper.xml
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\bin\Debug\EntityFramework.xml
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\obj\Debug\Ikhon.GBWeb.Data.csprojResolveAssemblyReference.cache
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\obj\Debug\Ikhon.GBWeb.Data.dll
+C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Data\obj\Debug\Ikhon.GBWeb.Data.pdb

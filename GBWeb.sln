@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{E5D81100-4BF6-4F10-B9B3-F5C03893CFDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Service", "2 - Service", "{0ECE4AE4-8F56-4FB0-AF91-68B924E9E549}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{1B752FB6-7C9B-457B-A616-9E28DE12B6CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{E4D462DD-81CC-4F8C-9134-FA5B57A0BF39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{1E8A980D-FEDC-457A-9338-DFBF7DFD6EF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 Data", "5.1 Data", "{B07B9821-3C07-4A58-B0DC-9B9B18A31D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ikhon.GBWeb.Data", "src\Ikhon.GBWeb.Data\Ikhon.GBWeb.Data.csproj", "{8AFB26F6-55A6-4CA5-B4C0-95AE70338BE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ikhon.GBWeb.Domain", "src\Ikhon.GBWeb.Domain\Ikhon.GBWeb.Domain.csproj", "{A9488AE6-3179-442E-9E0A-06F53171552C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ikhon.GBWeb.Application", "src\Ikhon.GBWeb.Application\Ikhon.GBWeb.Application.csproj", "{3E7D221F-DA26-4A50-A096-20989C518EE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ikhon.GBWeb.UI.Web", "src\Ikhon.GBWeb.UI.Web\Ikhon.GBWeb.UI.Web.csproj", "{1339F24C-D819-41C8-97AA-D210C14F627A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ikhon.GBWeb.API", "src\Ikhon.GBWeb.API\Ikhon.GBWeb.API.csproj", "{65A8113C-DFCD-413F-B524-26D809DD5059}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AFB26F6-55A6-4CA5-B4C0-95AE70338BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFB26F6-55A6-4CA5-B4C0-95AE70338BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFB26F6-55A6-4CA5-B4C0-95AE70338BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFB26F6-55A6-4CA5-B4C0-95AE70338BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9488AE6-3179-442E-9E0A-06F53171552C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9488AE6-3179-442E-9E0A-06F53171552C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9488AE6-3179-442E-9E0A-06F53171552C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9488AE6-3179-442E-9E0A-06F53171552C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7D221F-DA26-4A50-A096-20989C518EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7D221F-DA26-4A50-A096-20989C518EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7D221F-DA26-4A50-A096-20989C518EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7D221F-DA26-4A50-A096-20989C518EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1339F24C-D819-41C8-97AA-D210C14F627A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1339F24C-D819-41C8-97AA-D210C14F627A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1339F24C-D819-41C8-97AA-D210C14F627A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1339F24C-D819-41C8-97AA-D210C14F627A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A8113C-DFCD-413F-B524-26D809DD5059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A8113C-DFCD-413F-B524-26D809DD5059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A8113C-DFCD-413F-B524-26D809DD5059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A8113C-DFCD-413F-B524-26D809DD5059}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B07B9821-3C07-4A58-B0DC-9B9B18A31D13} = {1E8A980D-FEDC-457A-9338-DFBF7DFD6EF9}
+		{8AFB26F6-55A6-4CA5-B4C0-95AE70338BE2} = {B07B9821-3C07-4A58-B0DC-9B9B18A31D13}
+		{A9488AE6-3179-442E-9E0A-06F53171552C} = {E4D462DD-81CC-4F8C-9134-FA5B57A0BF39}
+		{3E7D221F-DA26-4A50-A096-20989C518EE8} = {1B752FB6-7C9B-457B-A616-9E28DE12B6CE}
+		{1339F24C-D819-41C8-97AA-D210C14F627A} = {E5D81100-4BF6-4F10-B9B3-F5C03893CFDD}
+		{65A8113C-DFCD-413F-B524-26D809DD5059} = {0ECE4AE4-8F56-4FB0-AF91-68B924E9E549}
+	EndGlobalSection
+EndGlobal

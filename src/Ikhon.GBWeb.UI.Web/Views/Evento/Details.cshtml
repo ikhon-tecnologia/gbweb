@@ -1,0 +1,50 @@
+﻿@model Ikhon.GBWeb.Application.ViewModels.EventoViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EventoViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pessoa.TXT_NOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pessoa.TXT_NOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TXT_EVENTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TXT_EVENTO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DT_EVENTO_INICIO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DT_EVENTO_INICIO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DT_EVENTO_FIM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DT_EVENTO_FIM)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.COD_EVENTO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
