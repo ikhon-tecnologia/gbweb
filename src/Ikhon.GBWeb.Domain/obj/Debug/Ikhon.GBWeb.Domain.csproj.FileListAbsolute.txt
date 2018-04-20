@@ -2,3 +2,4 @@ C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Domain\bin\Debug\Ikhon.GBWeb.Domain.dll
 C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Domain\bin\Debug\Ikhon.GBWeb.Domain.pdb
 C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Domain\obj\Debug\Ikhon.GBWeb.Domain.dll
 C:\Sistemas\GBWeb\src\Ikhon.GBWeb.Domain\obj\Debug\Ikhon.GBWeb.Domain.pdb
+C:\Sistemas\gbweb\src\Ikhon.GBWeb.Domain\obj\Debug\Ikhon.GBWeb.Domain.csprojResolveAssemblyReference.cache
