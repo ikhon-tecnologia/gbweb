@@ -1,118 +1,121 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Linq;
 using System.Net;
+using System.Web;
 using System.Web.Mvc;
 using Ikhon.GBWeb.Application.ViewModels;
+using Ikhon.GBWeb.UI.Web.Models;
 using Ikhon.GBWeb.Application.Interfaces;
 using Ikhon.GBWeb.Application.Service;
 
 namespace Ikhon.GBWeb.UI.Web.Controllers
 {
-    public class EventoController : Controller
+    public class PessoaController : Controller
     {
         private readonly IGBWEbAppService _GBWebAppService;
 
-        public EventoController()
+        public PessoaController()
         {
             _GBWebAppService = new GBWEbAppService();
         }
 
-        // GET: Evento
+        // GET: Pessoa
         public ActionResult Index()
         {
-            return View(_GBWebAppService.ListarEvento());
+            return View(_GBWebAppService.ListarPessoa());
         }
 
-        // GET: Evento/Details/5
+        // GET: Pessoa/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EventoViewModel eventoViewModel = _GBWebAppService.CarregarEvento((int)id);
-            if (eventoViewModel == null)
+            PessoaViewModel pessoaViewModel = _GBWebAppService.CarregarPessoa((int)id);
+            if (pessoaViewModel == null)    
             {
                 return HttpNotFound();
             }
-            return View(eventoViewModel);
+            return View(pessoaViewModel);
         }
 
-        // GET: Evento/Create
+        // GET: Pessoa/Create
         public ActionResult Create()
         {
-            ViewBag.COD_PESSOA = new SelectList(_GBWebAppService.ListarPessoa(), "COD_PESSOA", "TXT_NOME");
             return View();
         }
 
-        // POST: Evento/Create
+        // POST: Pessoa/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(EventoViewModel eventoViewModel)
+        public ActionResult Create(PessoaViewModel pessoaViewModel)
         {
             if (ModelState.IsValid)
             {
-                _GBWebAppService.IncluirEvento(eventoViewModel);
+                _GBWebAppService.IncluirPessoa(pessoaViewModel);
                 return RedirectToAction("Index");
             }
 
-            ViewBag.COD_PESSOA = new SelectList(_GBWebAppService.ListarPessoa(), "COD_PESSOA", "TXT_NOME", eventoViewModel.COD_PESSOA);
-            return View(eventoViewModel);
+            return View(pessoaViewModel);
         }
 
-        // GET: Evento/Edit/5
+        // GET: Pessoa/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EventoViewModel eventoViewModel = _GBWebAppService.CarregarEvento((int)id);
-            if (eventoViewModel == null)
+            PessoaViewModel pessoaViewModel = _GBWebAppService.CarregarPessoa((int)id);
+            if (pessoaViewModel == null)
             {
                 return HttpNotFound();
             }
-
-            return View(eventoViewModel);
+            return View(pessoaViewModel);
         }
 
-        // POST: Evento/Edit/5
+        // POST: Pessoa/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(EventoViewModel eventoViewModel)
+        public ActionResult Edit(PessoaViewModel pessoaViewModel)
         {
             if (ModelState.IsValid)
             {
-                _GBWebAppService.AlterarEvento(eventoViewModel);
+                _GBWebAppService.AlterarPessoa(pessoaViewModel);
                 return RedirectToAction("Index");
             }
-            return View(eventoViewModel);
+            return View(pessoaViewModel);
         }
 
-        // GET: Evento/Delete/5
+        // GET: Pessoa/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EventoViewModel eventoViewModel = _GBWebAppService.CarregarEvento((int)id);
-            if (eventoViewModel == null)
+            PessoaViewModel pessoaViewModel = _GBWebAppService.CarregarPessoa((int)id);
+            if (pessoaViewModel == null)
             {
                 return HttpNotFound();
             }
-            return View(eventoViewModel);
+            return View(pessoaViewModel);
         }
 
-        // POST: Evento/Delete/5
+        // POST: Pessoa/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            _GBWebAppService.ExcluirEvento(id);
+            _GBWebAppService.ExcluirPessoa(id);
             return RedirectToAction("Index");
         }
 

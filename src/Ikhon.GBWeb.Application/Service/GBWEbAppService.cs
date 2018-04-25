@@ -15,10 +15,12 @@ namespace Ikhon.GBWeb.Application.Service
     public class GBWEbAppService : IGBWEbAppService
     {
         private readonly EventoRepository _EventoRepository;
+        private readonly PessoaRepository _PessoaRepository;
 
         public GBWEbAppService()
         {
             _EventoRepository = new EventoRepository();
+            _PessoaRepository = new PessoaRepository();
 
         }
 
@@ -42,15 +44,42 @@ namespace Ikhon.GBWeb.Application.Service
             return Mapper.Map<List<EventoViewModel>>(_EventoRepository.ObterTodos());            
         }
 
+        public EventoViewModel CarregarEvento(int cod_evento)
+        {
+            return Mapper.Map<EventoViewModel>(_EventoRepository.ObterPorId(cod_evento));
+        }
+
+        public PessoaViewModel IncluirPessoa(PessoaViewModel pessoa)
+        {
+            return Mapper.Map<PessoaViewModel>(_PessoaRepository.Adicionar(Mapper.Map<Pessoa>(pessoa)));
+        }
+
+        public PessoaViewModel AlterarPessoa(PessoaViewModel pessoa)
+        {
+            return Mapper.Map<PessoaViewModel>(_PessoaRepository.Atualizar(Mapper.Map<Pessoa>(pessoa)));
+        }
+
+        public void ExcluirPessoa(int cod_pessoa)
+        {
+            _PessoaRepository.Remover(cod_pessoa);
+        }
+
+        public ICollection<PessoaViewModel> ListarPessoa()
+        {
+            return Mapper.Map<List<PessoaViewModel>>(_PessoaRepository.ObterTodos());
+        }
+
+        public PessoaViewModel CarregarPessoa(int cod_pessoa)
+        {
+            return Mapper.Map<PessoaViewModel>(_PessoaRepository.ObterPorId(cod_pessoa));
+        }
+
         public void Dispose()
         {
             _EventoRepository.Dispose();
             GC.SuppressFinalize(this);
         }
 
-        public EventoViewModel CarregarEvento(int cod_evento)
-        {
-            return Mapper.Map<EventoViewModel>(_EventoRepository.ObterPorId(cod_evento));
-        }
+        
     }
 }

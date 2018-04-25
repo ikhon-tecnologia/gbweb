@@ -14,5 +14,12 @@ namespace Ikhon.GBWeb.Application.Interfaces
         EventoViewModel AlterarEvento(EventoViewModel evento);
         EventoViewModel CarregarEvento(int cod_evento);
         void ExcluirEvento(int cod_evento);
+
+        ICollection<PessoaViewModel> ListarPessoa();
+        PessoaViewModel IncluirPessoa(PessoaViewModel pessoa);
+        PessoaViewModel AlterarPessoa(PessoaViewModel pessoa);
+        PessoaViewModel CarregarPessoa(int cod_pessoa);
+        void ExcluirPessoa(int cod_pessoa);
+
     }
 }

@@ -15,7 +15,10 @@ namespace Ikhon.GBWeb.Data.EntityConfig
             HasKey(p => p.COD_EVENTO);
 
             Property(p => p.TXT_EVENTO)
-                .HasMaxLength(255);                            
+                .HasMaxLength(255);
+
+            Property(p => p.TXT_LOCAL)
+                .HasMaxLength(255);
 
             ToTable("TBL_EVENTO");
         }

@@ -11,15 +11,26 @@ namespace Ikhon.GBWeb.Application.ViewModels
     {
         [Key]
         public int COD_EVENTO { get; set; }
+        [Required]
         [Display(Name ="Pessoa")]
         public int COD_PESSOA { get; set; }
+        [Required]
         [Display(Name = "Evento")]
         public string TXT_EVENTO { get; set; }
-        [Display(Name = "Evento Inicio")]
+        [Required]
+        [DataType(DataType.DateTime)]
+        [Display(Name = "Data de início do evento")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy HH:mm}", ApplyFormatInEditMode = true)]
         public DateTime DT_EVENTO_INICIO { get; set; }
-        [Display(Name = "Evento Fim")]
+        [Required]
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy HH:mm}", ApplyFormatInEditMode = true)]
+        [Display(Name = "Data de fim do evento")]
         public DateTime DT_EVENTO_FIM { get; set; }
-
+        [Display(Name = "Local")]
+        public string TXT_LOCAL { get; set; }
+        [Display(Name = "Ativo")]
+        public bool COD_ATIVO { get; set; }
         public virtual PessoaViewModel Pessoa { get; set; }
     }
 }

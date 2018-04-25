@@ -20,6 +20,12 @@ namespace Ikhon.GBWeb.Data.EntityConfig
             Property(p => p.TXT_NOME)
                 .HasMaxLength(255);
 
+            Property(p => p.TXT_TELEFONE)
+                .HasMaxLength(30);
+
+            Property(p => p.TXT_LOCALIZACAO)
+                .HasMaxLength(255);
+
             ToTable("TBL_PESSOA");
         }
     }

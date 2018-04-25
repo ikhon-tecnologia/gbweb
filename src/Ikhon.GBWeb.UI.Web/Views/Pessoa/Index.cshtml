@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Ikhon.GBWeb.Application.ViewModels.PessoaViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TXT_NOME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TXT_EMAIL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TXT_TELEFONE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TXT_LOCALIZACAO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COD_ORADOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COD_ATIVO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TXT_NOME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TXT_EMAIL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TXT_TELEFONE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TXT_LOCALIZACAO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COD_ORADOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COD_ATIVO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.COD_PESSOA }) |
+            @Html.ActionLink("Details", "Details", new { id=item.COD_PESSOA }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.COD_PESSOA })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,66 @@
+﻿@model Ikhon.GBWeb.Application.ViewModels.PessoaViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PessoaViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TXT_NOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TXT_NOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TXT_EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TXT_EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TXT_TELEFONE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TXT_TELEFONE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TXT_LOCALIZACAO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TXT_LOCALIZACAO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COD_ORADOR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COD_ORADOR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COD_ATIVO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COD_ATIVO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.COD_PESSOA }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
