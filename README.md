@@ -1,2 +1,2 @@
 # gbweb
-Repositório da parte administrativa(Web e API)
+Repositório da parte administrativa(Web e API).
